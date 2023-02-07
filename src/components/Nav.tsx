@@ -14,7 +14,6 @@ import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -73,7 +72,7 @@ export default function ButtonAppBar({setMode, mode}) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" >
+      <AppBar position="fixed" >
         <Toolbar >
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
