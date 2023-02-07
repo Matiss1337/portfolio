@@ -8,16 +8,21 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 
+
+
+
+
 const StyledListItemIcon = styled(ListItemIcon)`
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
+
 function Sidebar() {
 
   return (
-    <Box flex={0.3} sx={{display: {xs: "none", sm: "block"}}}>
+    <Box flex={0.5} pr="25px" sx={{display: {xs: "none", sm: "block"}}}>
       <Box position="fixed" display="flex" alignItems="end" justifyContent="center" height="100%">
         <List>
           <ListItem disablePadding sx={{textAlign:"center"}}>

@@ -1,13 +1,20 @@
 import React from 'react'
-import {Box} from "@mui/material";
+import {Box, Stack} from "@mui/material";
 
 
 
-const Feed = () => {
+const Main = () => {
   return (
-    <Box flex={11} bgcolor="red" height={900}>
+    <Box flex={11} bgcolor="red" height="100vh">
+      <Stack alignItems="center">
+      <Stack bgcolor={"white"} width="1200px">
+        
+        
+        
+      </Stack>
+      </Stack>
     </Box>
   )
 }
 
-export default Feed
+export default Main
