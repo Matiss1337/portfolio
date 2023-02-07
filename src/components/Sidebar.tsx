@@ -1,38 +1,59 @@
 import React from 'react'
-import {Box} from "@mui/material";
+import {Box, styled} from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
 
+const StyledListItemIcon = styled(ListItemIcon)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
-function Sidebar({mode, setMode}) {
+function Sidebar() {
 
   return (
-    <Box flex={0.5} p={2} sx={{display: {xs: "none", sm: "block"}}}>
-      <Box position="fixed" display="flex" alignItems="center" justifyContent="center" height="100%">
+    <Box flex={0.3} sx={{display: {xs: "none", sm: "block"}}}>
+      <Box position="fixed" display="flex" alignItems="end" justifyContent="center" height="100%">
         <List>
-          <ListItem >
-            <ListItemButton
+          <ListItem disablePadding sx={{textAlign:"center"}}>
+            <ListItemButton 
              href="https://github.com/Matiss1337" 
             color="inherit" target="_blank">
-              <ListItemIcon>
+              <StyledListItemIcon>
                 <GitHubIcon/>
-              </ListItemIcon>
+              </StyledListItemIcon>
             </ListItemButton>
           </ListItem>
 
-          <ListItem>
+          <ListItem disablePadding>
             <ListItemButton  
             href="https://www.linkedin.com/in/matiss-judins-319235228/" 
             color="inherit" target="_blank">
-              <ListItemIcon>
+              <StyledListItemIcon >
                 <LinkedInIcon />
-              </ListItemIcon>
+              </StyledListItemIcon>
             </ListItemButton>
+          </ListItem>
+
+            <ListItem>
+              <StyledListItemIcon>
+                <ArrowUpwardRoundedIcon fontSize={"large"}/>
+              </StyledListItemIcon>
+          </ListItem>
+            <ListItem>
+              <StyledListItemIcon >
+                <ArrowUpwardRoundedIcon fontSize={"medium"}/>
+              </StyledListItemIcon>
+          </ListItem>
+            <ListItem sx={{mb:"30px"}}>
+              <StyledListItemIcon>
+                <ArrowUpwardRoundedIcon fontSize={"small"}/>
+              </StyledListItemIcon>
           </ListItem>
 
 

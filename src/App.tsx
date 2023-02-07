@@ -4,6 +4,7 @@ import {Box, createTheme, ThemeProvider} from "@mui/material";
 import Sidebar from './components/Sidebar'
 import { Stack } from '@mui/material';
 import Main from './components/Main'
+import RightSideBar from './components/RightSideBar'
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
     <Box bgcolor={"background.default"} color={"text.primary"}>
       <Nav setMode={setMode} mode={mode}/>
     <Stack direction="row" spacing={2} justifyContent="space-between" bgcolor={"background.default"} color={"text.primary"}>
-    <Sidebar setMode={setMode} mode={mode}/>
+    <Sidebar/>
     <Main/>
+    <RightSideBar/>
     </Stack>
     </Box>
     </ThemeProvider>
