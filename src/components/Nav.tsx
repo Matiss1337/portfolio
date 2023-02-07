@@ -14,6 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -82,7 +83,7 @@ export default function ButtonAppBar({setMode, mode}) {
           <Button color="inherit">About me</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
-          <Link underline="none" href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub" color="inherit"><Button color="inherit">CV</Button></Link>
+          <Link underline="none"  target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub" color="inherit"><Button color="inherit">CV</Button></Link>
           
         </Box>
           <IconButton
@@ -94,24 +95,24 @@ export default function ButtonAppBar({setMode, mode}) {
           >
             <MenuIcon />
           </IconButton>
-          <Drawer open={open} onClose={handleToggle}>
-        <List>
-          <ListItem button onClick={handleToggle}>
-            <ListItemText primary={<Button color="inherit">About me</Button>} />
+          <Drawer open={open} anchor="top" onClose={handleToggle}>
+        <List sx={{alignItems:"center"}}>
+          <ListItem onClick={handleToggle}>
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">About me</Button>} />
           </ListItem>
-          <ListItem button onClick={handleToggle}>
-            <ListItemText primary={<Button color="inherit">Projects</Button>} />
+          <ListItem onClick={handleToggle}>
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">Projects</Button>} />
           </ListItem>
-          <ListItem button onClick={handleToggle}>
-            <ListItemText primary={<Button color="inherit">Contact</Button>} />
+          <ListItem onClick={handleToggle} >
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">Contact</Button>} />
           </ListItem>
-          <ListItem button onClick={handleToggle}>
-            <ListItemText 
+          <ListItem onClick={handleToggle}>
+            <ListItemText  sx={{textAlign:"center"}}
             primary={<Button href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub" 
-            color="inherit" target="_blank">CV</Button>} 
-/>          </ListItem>
-        </List>
-      </Drawer>
+            color="inherit" target="_blank">CV</Button>}/>          
+            </ListItem>
+          </List>
+        </Drawer>
 
           <MaterialUISwitch  onChange={e=> setMode(mode === "light" ? "dark" : "light")}/>
         </Toolbar>
