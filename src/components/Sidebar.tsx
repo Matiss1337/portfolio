@@ -22,7 +22,7 @@ const StyledListItemIcon = styled(ListItemIcon)`
 function Sidebar() {
 
   return (
-    <Box flex={0.5} pr="25px" sx={{display: {xs: "none", sm: "block"}}}>
+    <Box flex={0.5} pr="25px" sx={{display: {xs: "none", sm: "none", md: "none", lg: "none", xl: "block"}}}>
       <Box position="fixed" display="flex" alignItems="end" justifyContent="center" height="100%">
         <List>
           <ListItem disablePadding sx={{textAlign:"center"}}>

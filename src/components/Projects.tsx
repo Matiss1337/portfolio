@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Cars from "../assets/cars.gif"
 import GMTA from "../assets/gmta.gif"
 import Chat from "../assets/chat.gif"
-import Paper from '@mui/material/Paper';
+import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 const Projects = () => {
   return (
@@ -30,11 +30,11 @@ const Projects = () => {
             <Typography variant="h3">GMTA</Typography>
             <Typography variant="h5">Implemented Figma designs  in a React application with pixel-perfect precision, ensuring a high level of visual accuracy.
             </Typography>
-            <Typography variant="h5">React</Typography>
-            <Typography variant="h5">Typescript</Typography>
-            <Typography variant="h5">Figma to React</Typography>
-            <Typography variant="h5">Responsive design</Typography>
-            <Typography variant="h5">Pixel perfect</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> React</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Typescript</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Figma to React</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Responsive design</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Pixel perfect</Typography>
             <Button href="https://github.com/Matiss1337/GMTA" 
             color="inherit" target="_blank">Github Link</Button>
             
@@ -56,11 +56,11 @@ const Projects = () => {
             <Typography variant="h3">Car dealership</Typography>
             <Typography variant="h5">Utilized Firebase for user authentication and data storage, including real-time database, image storage, and email and Google sign-in functionality, added sorting functionality to the app.</Typography>
             <Typography variant="h4">Tehnologies Used:</Typography>
-            <Typography variant="h5">React</Typography>
-            <Typography variant="h5">Firebase</Typography>
-            <Typography variant="h5">Authentication</Typography>
-            <Typography variant="h5">Firebase DB</Typography>
-            <Typography variant="h5">Image Storage</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> React</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Firebase</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Authentication</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Firebase DB</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/> Image Storage</Typography>
             <Button href="https://github.com/Matiss1337/React-Firebase-CRUD-Auth-DB-Context-Router" 
             color="inherit" target="_blank">Github Link</Button>
             </Box>
@@ -80,10 +80,10 @@ const Projects = () => {
             <Typography variant="h3">Chat app</Typography>
             <Typography variant="h5">Developed a real-time chat application using websockets, React, Node.js, and Express. Implemented message broadcasting, and real-time messaging.</Typography>
             <Typography variant="h4">Tehnologies Used:</Typography>
-            <Typography variant="h5">React</Typography>
-            <Typography variant="h5">Typescript</Typography>
-            <Typography variant="h5">Material-ui</Typography>
-            <Typography variant="h5">Responsive design</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>React</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>Typescript</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>Material-ui</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>Responsive design</Typography>
             <Button href="https://github.com/Matiss1337/Chat-App" 
             color="inherit" target="_blank">Github Link</Button>
             </Box>
