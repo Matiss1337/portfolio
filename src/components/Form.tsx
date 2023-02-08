@@ -7,8 +7,8 @@ import SendIcon from '@mui/icons-material/Send';
 const Form = () => {
 
   return (
-    <Stack alignItems="center" mt="80px">
-        <Box width="600px">
+    <Stack alignItems="center" mt="80px" sx={{maxWidth: {xs: "300px", sm: "300px", md: "100%", lg: "100%", xl: "100%"}}}>
+        <Box>
         <Typography variant="h3" textAlign="center" pb="20px"> Contact Me </Typography>
         <form action="https://formsubmit.co/matissj1337@gmail.com" method="POST">
         <Box flexDirection="column" display="flex" width="600px" >

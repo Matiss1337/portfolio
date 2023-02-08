@@ -9,7 +9,7 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 const Projects = () => {
   return (
-    <Stack flexDirection="column">
+    <Stack flexDirection="column" sx={{display: 'flex', maxWidth: {xs: "300px", sm: "300px", md: "100%", lg: "100%", xl: "100%"}}}>
         <Box>
             
         <Typography variant="h2"
