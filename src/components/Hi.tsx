@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Stack, Typography} from "@mui/material";
 
-const AboutMe = () => {
+const Hi = () => {
   return (
     <Stack flexDirection="row">
         <Box width="70%"
@@ -16,4 +16,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default Hi

@@ -16,7 +16,7 @@ const StyledTypography = styled(Typography)`
   letter-spacing: 4px;
 `;
 
-function Sidebar() {
+function RightSidebar() {
 
   return (
     <Box flex={0.5} pr="25px" sx={{display: {xs: "none", sm: "block"}}}>
@@ -50,4 +50,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default RightSidebar

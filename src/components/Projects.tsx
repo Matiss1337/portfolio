@@ -1,15 +1,17 @@
 import React from 'react'
 import {Box, Stack, Typography} from "@mui/material";
 import Button from '@mui/material/Button';
-import Dogs from "../assets/dogs.gif"
+import Divider from '@mui/material/Divider';
 import Cars from "../assets/cars.gif"
 import GMTA from "../assets/gmta.gif"
 import Chat from "../assets/chat.gif"
+import Paper from '@mui/material/Paper';
 
-const AboutMe = () => {
+const Projects = () => {
   return (
     <Stack flexDirection="column">
         <Box>
+            
         <Typography variant="h2"
         sx={{p:"50px", pl:"0", mt:"200px"}}>Recent Projects</Typography>
          </Box>
@@ -35,7 +37,9 @@ const AboutMe = () => {
             <Typography variant="h5">Pixel perfect</Typography>
             <Button href="https://github.com/Matiss1337/GMTA" 
             color="inherit" target="_blank">Github Link</Button>
+            
             </Box>
+            
          </Stack>
 
                   <Stack flexDirection="row-reverse" mb="140px" mt="10px">
@@ -61,7 +65,7 @@ const AboutMe = () => {
             color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>
-
+<Divider variant="fullWidth"/>
              <Stack flexDirection="row" mb="140px" mt="10px">
                      <Box
         component="img"
@@ -90,4 +94,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default Projects
