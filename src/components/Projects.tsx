@@ -20,8 +20,8 @@ const Projects = () => {
                      <Box
         component="img"
         sx={{
-          height: 500,
-          width: 800,
+          height: 400,
+          width: 600,
         }}
         alt="Figma to React project"
         src={GMTA}
@@ -47,8 +47,8 @@ const Projects = () => {
                      <Box
         component="img"
         sx={{
-          height: 500,
-          width: 800,
+          height: 400,
+          width: 600,
         }}
         alt="The house from the offer."
         src={Cars}
@@ -72,8 +72,8 @@ const Projects = () => {
                      <Box
         component="img"
         sx={{
-          height: 500,
-          width: 800,
+          height: 400,
+          width: 600,
         }}
         alt="The house from the offer."
         src={Chat}

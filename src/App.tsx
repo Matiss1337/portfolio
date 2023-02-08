@@ -25,7 +25,7 @@ function App() {
     <Sidebar/>
     <Main/>
     <RightSideBar/>
-    </Stack>
+    </Stack >
     <Footer/>
     </Box>
     </ThemeProvider>

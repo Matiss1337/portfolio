@@ -72,7 +72,7 @@ export default function ButtonAppBar({setMode, mode}) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" >
+      <AppBar position="fixed" sx={{bgcolor:"#ff5152"}}>
         <Toolbar >
 
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>

@@ -40,7 +40,7 @@ const Form = () => {
             multiline
             rows={4}
           />
-          <Button variant="contained" endIcon={<SendIcon />} type="submit">
+          <Button sx={{bgcolor:"#ff5152"}} variant="contained" endIcon={<SendIcon />} type="submit">
             Send
           </Button>
         </Box>
