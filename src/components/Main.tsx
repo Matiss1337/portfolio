@@ -4,7 +4,7 @@ import AboutMe from './AboutMe';
 import Hi from './Hi';
 import Projects from './Projects';
 import Form from './Form';
-import Footer from './Footer';
+
 
 
 
@@ -17,9 +17,6 @@ const Main = () => {
         <AboutMe/>
         <Projects/>
         <Form/>
-        <Footer/>
-        
-        
       </Stack>
       </Stack>
     </Box>

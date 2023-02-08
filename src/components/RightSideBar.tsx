@@ -25,23 +25,23 @@ function RightSidebar() {
           <ListItem >
             <ListItemButton>
               <ListItemIcon>
-                <StyledTypography sx={{textOrientation: 'sideways', writingMode: 'vertical-lr'}} variant="h6" color="text.primary">Matissj1337@gmail.com </StyledTypography>
+                <StyledTypography sx={{textOrientation: 'sideways', writingMode: 'vertical-lr'}} variant="h5" color="#ff5152">Matissj1337@gmail.com </StyledTypography>
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
             <ListItem>
               <StyledListItemIcon>
-                <ArrowUpwardRoundedIcon fontSize={"large"}/>
+                <ArrowUpwardRoundedIcon style={{ color: '#ff5152' }} fontSize={"large"}/>
               </StyledListItemIcon>
           </ListItem>
             <ListItem>
               <StyledListItemIcon >
-                <ArrowUpwardRoundedIcon fontSize={"medium"}/>
+                <ArrowUpwardRoundedIcon style={{ color: '#ff5152' }} fontSize={"medium"}/>
               </StyledListItemIcon>
           </ListItem>
-            <ListItem sx={{mb:"30px"}}>
+            <ListItem sx={{mb:"130px"}}>
               <StyledListItemIcon>
-                <ArrowUpwardRoundedIcon fontSize={"small"}/>
+                <ArrowUpwardRoundedIcon style={{ color: '#ff5152' }} fontSize={"small"}/>
               </StyledListItemIcon>
           </ListItem>
         </List>

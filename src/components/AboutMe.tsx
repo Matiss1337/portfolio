@@ -2,9 +2,12 @@ import React from 'react'
 import {Box, Stack, Typography} from "@mui/material";
 import MyPhoto from "../assets/MyPhoto.png"
 
+
+
 const AboutMe = () => {
   return (
-    <Stack flexDirection="row">
+    <Stack flexDirection="row" 
+    sx={{ display: 'flex', maxWidth: {xs: "300px", sm: "300px", md: "300px", lg: "100%", xl: "100%"}}}>
         <Box>
         <Typography variant="h2"
         sx={{p:"45px", pl:"0"}}>About Me</Typography>

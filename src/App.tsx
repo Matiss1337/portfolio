@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar'
 import { Stack } from '@mui/material';
 import Main from './components/Main'
 import RightSideBar from './components/RightSideBar'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <Main/>
     <RightSideBar/>
     </Stack>
+    <Footer/>
     </Box>
     </ThemeProvider>
   )

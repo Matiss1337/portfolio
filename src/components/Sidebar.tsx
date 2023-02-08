@@ -30,7 +30,7 @@ function Sidebar() {
              href="https://github.com/Matiss1337" 
             color="inherit" target="_blank">
               <StyledListItemIcon>
-                <GitHubIcon/>
+                <GitHubIcon style={{ color: '#ff5152', fontSize:"40"}}/>
               </StyledListItemIcon>
             </ListItemButton>
           </ListItem>
@@ -40,24 +40,24 @@ function Sidebar() {
             href="https://www.linkedin.com/in/matiss-judins-319235228/" 
             color="inherit" target="_blank">
               <StyledListItemIcon >
-                <LinkedInIcon />
+                <LinkedInIcon style={{ color: '#ff5152', fontSize:"40" }}/>
               </StyledListItemIcon>
             </ListItemButton>
           </ListItem>
 
             <ListItem>
               <StyledListItemIcon>
-                <ArrowUpwardRoundedIcon fontSize={"large"}/>
+                <ArrowUpwardRoundedIcon  style={{ color: '#ff5152' }} fontSize={"large"}/>
               </StyledListItemIcon>
           </ListItem>
             <ListItem>
               <StyledListItemIcon >
-                <ArrowUpwardRoundedIcon fontSize={"medium"}/>
+                <ArrowUpwardRoundedIcon style={{ color: '#ff5152' }} fontSize={"medium"}/>
               </StyledListItemIcon>
           </ListItem>
-            <ListItem sx={{mb:"30px"}}>
+            <ListItem sx={{mb:"130px", color:""}}>
               <StyledListItemIcon>
-                <ArrowUpwardRoundedIcon fontSize={"small"}/>
+                <ArrowUpwardRoundedIcon style={{ color: '#ff5152' }} fontSize={"small"}/>
               </StyledListItemIcon>
           </ListItem>
 

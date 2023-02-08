@@ -41,8 +41,9 @@ const Projects = () => {
             </Box>
             
          </Stack>
+            <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
 
-                  <Stack flexDirection="row-reverse" mb="140px" mt="10px">
+                  <Stack flexDirection="row-reverse" mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
@@ -65,8 +66,9 @@ const Projects = () => {
             color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>
-<Divider variant="fullWidth"/>
-             <Stack flexDirection="row" mb="140px" mt="10px">
+            <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
+
+             <Stack flexDirection="row" mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
