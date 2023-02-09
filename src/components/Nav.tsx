@@ -68,8 +68,13 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
+type ThemeProps = {
+  setMode: (mode: string) => void;
+  mode: string;
+}
 
-export default function ButtonAppBar({setMode, mode}) {
+
+const Nav: React.FC<ThemeProps> = ({setMode, mode}) => {
   const [open, setOpen] = useState(false);
 
   const handleToggle = () => {
@@ -187,3 +192,5 @@ export default function ButtonAppBar({setMode, mode}) {
     </Box>
   );
 }
+
+export default Nav;
