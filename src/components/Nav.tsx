@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,6 +14,10 @@ import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
+
+
+
+
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -79,10 +83,11 @@ export default function ButtonAppBar({setMode, mode}) {
             MatissTech
           </Typography>
           <Box sx={{display:{xs:"none", sm:"block"}}}>
-          <Button color="inherit">About me</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Contact</Button>
-          <Link underline="none"  target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub" color="inherit"><Button color="inherit">CV</Button></Link>
+          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">About me</Button>
+          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">Projects</Button>
+          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">Contact</Button>
+          <Link underline="none"  target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub"
+           color="inherit"><Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">CV</Button></Link>
           
         </Box>
           <IconButton

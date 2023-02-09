@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Box, Stack, Typography} from "@mui/material";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -8,12 +8,14 @@ const Form = () => {
 
   return (
     <Stack justifyContent="center"  mt="80px" sx={{
-    alignSelf: {xs: "flex-start", sm: "center", md: "center", lg: "center", xl: "center"}
+    alignSelf: {xs: "center", sm: "center", md: "center", lg: "center", xl: "center"}
     }}>
-        <Stack alignItems="center" width="fit-content">
-        <Typography variant="h3" textAlign="center" pb="20px"> Contact Me </Typography>
+        <Stack alignItems="center" width="fit-content"> 
+        <Typography variant="h3" textAlign="center" pb="20px" color="#ff5152" fontWeight="bold"> Contact Me </Typography>
         <form action="https://formsubmit.co/matissj1337@gmail.com" method="POST">
-        <Box flexDirection="column" display="flex" width="100%" >
+        <Box flexDirection="column" display="flex" sx={{
+          width: {xs: "300px", sm: "400px", md: "600px", lg: "600px", xl: "600px"}
+        }} >
             <Stack sx={{flexDirection: {
               xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
             }}} pb="20px">
@@ -44,7 +46,7 @@ const Form = () => {
             multiline
             rows={4}
           />
-          <Button sx={{bgcolor:"#ff5152"}} variant="contained" endIcon={<SendIcon />} type="submit">
+          <Button sx={{bgcolor:"#ff5152", color:"White"}} variant="contained" endIcon={<SendIcon />} type="submit">
             Send
           </Button>
         </Box>

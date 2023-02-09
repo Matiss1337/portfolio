@@ -13,12 +13,12 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 const Projects = () => {
   return (
     <Stack flexDirection="column"
-    sx={{display: 'flex', maxWidth: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "100%"},
+    sx={{display: 'flex', width: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "80%"},
     }}
     >
               <Box>
             
-        <Typography variant="h2"
+        <Typography variant="h2" color="#ff5152" fontWeight="bold"
         sx={{p:"50px", pl:"0", mt:"200px"}}>Recent Projects</Typography>
          </Box>
 
@@ -26,7 +26,9 @@ const Projects = () => {
             }}} mb="140px" mt="10px">
                      <Box
         component="img"
-        sx={{
+        sx={{ bgcolor:"grey",
+        padding:"2px",
+        borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
           height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
@@ -45,7 +47,7 @@ const Projects = () => {
             <Typography variant="h5"><CheckOutlinedIcon/> Figma to React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Responsive design</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Pixel perfect</Typography>
-            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/GMTA" 
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152", color:"White", ':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/GMTA" 
             color="inherit" target="_blank">Github Link</Button>
             
             </Box>
@@ -60,6 +62,9 @@ const Projects = () => {
                      <Box
         component="img"
         sx={{
+          bgcolor:"grey",
+        padding:"2px",
+        borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
           height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
@@ -78,7 +83,7 @@ const Projects = () => {
             <Typography variant="h5"><CheckOutlinedIcon/> Authentication</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Firebase DB</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Image Storage</Typography>
-            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/React-Firebase-CRUD-Auth-DB-Context-Router" 
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152", color:"White",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/React-Firebase-CRUD-Auth-DB-Context-Router" 
             color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>
@@ -91,6 +96,9 @@ const Projects = () => {
                      <Box
         component="img"
         sx={{
+          bgcolor:"grey",
+        padding:"2px",
+        borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
           height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
@@ -108,7 +116,7 @@ const Projects = () => {
             <Typography variant="h5"><CheckOutlinedIcon/>Typescript</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Material-ui</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Responsive design</Typography>
-            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/Chat-App" 
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152", color:"White",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/Chat-App" 
              color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>

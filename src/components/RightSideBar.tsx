@@ -22,12 +22,8 @@ function RightSidebar() {
     <Box flex={0.5} pr="25px" sx={{display: {xs: "none", sm: "none", md: "none", lg: "none", xl: "block"}}}>
       <Box position="fixed" display="flex" alignItems="end" justifyContent="center" height="100%">
         <List>
-          <ListItem >
-            <ListItemButton>
-              <ListItemIcon>
+          <ListItem sx={{ml:"14px"}}>    
                 <StyledTypography sx={{textOrientation: 'sideways', writingMode: 'vertical-lr'}} variant="h5" color="#ff5152">Matissj1337@gmail.com </StyledTypography>
-              </ListItemIcon>
-            </ListItemButton>
           </ListItem>
             <ListItem>
               <StyledListItemIcon>
