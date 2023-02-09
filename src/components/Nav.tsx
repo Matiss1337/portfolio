@@ -75,7 +75,7 @@ export default function ButtonAppBar({setMode, mode}) {
       <AppBar position="fixed" sx={{bgcolor:"#ff5152"}}>
         <Toolbar >
 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             MatissTech
           </Typography>
           <Box sx={{display:{xs:"none", sm:"block"}}}>

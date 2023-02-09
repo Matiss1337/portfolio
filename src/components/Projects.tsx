@@ -7,6 +7,9 @@ import GMTA from "../assets/gmta.gif"
 import Chat from "../assets/chat.gif"
 import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
+
+
+
 const Projects = () => {
   return (
     <Stack flexDirection="column" sx={{ maxWidth: {xs: "40%", sm: "50%", md: "70%", lg: "100%", xl: "100%"}}}>
@@ -30,14 +33,14 @@ const Projects = () => {
             />  
             <Box>
             <Typography variant="h3">GMTA</Typography>
-            <Typography variant="h5">Implemented Figma designs  in a React application with pixel-perfect precision, ensuring a high level of visual accuracy.
+            <Typography sx={{pt:"10px", pb:"10px"}} variant="h5">Implemented Figma designs  in a React application with pixel-perfect precision, ensuring a high level of visual accuracy.
             </Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Typescript</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Figma to React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Responsive design</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Pixel perfect</Typography>
-            <Button href="https://github.com/Matiss1337/GMTA" 
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/GMTA" 
             color="inherit" target="_blank">Github Link</Button>
             
             </Box>
@@ -61,14 +64,14 @@ const Projects = () => {
             />  
             <Box>
             <Typography variant="h3">Car dealership</Typography>
-            <Typography variant="h5">Utilized Firebase for user authentication and data storage, including real-time database, image storage, and email and Google sign-in functionality, added sorting functionality to the app.</Typography>
+            <Typography sx={{pt:"10px", pb:"10px"}} variant="h5">Utilized Firebase for user authentication and data storage, including real-time database, image storage, and email and Google sign-in functionality, added sorting functionality to the app.</Typography>
             <Typography variant="h4">Tehnologies Used:</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Firebase</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Authentication</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Firebase DB</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/> Image Storage</Typography>
-            <Button href="https://github.com/Matiss1337/React-Firebase-CRUD-Auth-DB-Context-Router" 
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/React-Firebase-CRUD-Auth-DB-Context-Router" 
             color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>
@@ -90,14 +93,14 @@ const Projects = () => {
             />  
             <Box>
             <Typography variant="h3">Chat app</Typography>
-            <Typography variant="h5">Developed a real-time chat application using websockets, React, Node.js, and Express. Implemented message broadcasting, and real-time messaging.</Typography>
+            <Typography sx={{pt:"10px", pb:"10px"}} variant="h5">Developed a real-time chat application using websockets, React, Node.js, and Express. Implemented message broadcasting, and real-time messaging.</Typography>
             <Typography variant="h4">Tehnologies Used:</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Typescript</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Material-ui</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Responsive design</Typography>
-            <Button href="https://github.com/Matiss1337/Chat-App" 
-            color="inherit" target="_blank">Github Link</Button>
+            <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/Chat-App" 
+             color="inherit" target="_blank">Github Link</Button>
             </Box>
          </Stack>
 
@@ -107,3 +110,5 @@ const Projects = () => {
 }
 
 export default Projects
+
+// bgcolor={"background.default"} color={"text.primary"}

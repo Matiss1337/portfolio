@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <Box flex={11} height="100%" >
       <Stack alignItems="center" bgcolor={"background.default"} color={"text.primary"}>
-      <Stack mt="100px" bgcolor={"background.default"} color={"text.primary"} width="1200px">
+      <Stack alignItems="center" mt="100px" bgcolor={"background.default"} color={"text.primary"} max-width="1200px">
         <Hi/>
         <AboutMe/>
         <Projects/>
