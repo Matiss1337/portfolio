@@ -7,8 +7,8 @@ import MyPhoto from "../assets/MyPhoto.png"
 const AboutMe = () => {
   return (
     <Stack flexDirection="row" 
-    sx={{display: 'flex', maxWidth: {xs: "40%", sm: "50%", md: "70%", lg: "100%", xl: "100%"},
-    flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+    sx={{display: 'flex', maxWidth: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "100%"},
+    flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "column-reverse", lg: "row", xl: "row"
             }}}>
         <Box>
         <Typography variant="h2"
@@ -20,16 +20,16 @@ const AboutMe = () => {
          </Box>
          
          
-         <Box
+         <Stack  
         component="img"
         sx={{
-          height: 500,
-          width: 500,
+          height: {xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "500px"},
+          width: {xs: "400px", sm: "400px", md: "500px", lg: "500px", xl: "500px"},
           borderRadius: "50%",
+          alignSelf: "center",
         }}
-        alt="The house from the offer."
-        src={MyPhoto}
-      />
+        alt="My Photo"
+        src={MyPhoto}/>
     </Stack>
   )
 }

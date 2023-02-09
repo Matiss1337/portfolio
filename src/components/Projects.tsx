@@ -12,21 +12,26 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 const Projects = () => {
   return (
-    <Stack flexDirection="column" sx={{ maxWidth: {xs: "40%", sm: "50%", md: "70%", lg: "100%", xl: "100%"}}}>
-        <Box>
+    <Stack flexDirection="column"
+    sx={{display: 'flex', maxWidth: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "100%"},
+    }}
+    >
+              <Box>
             
         <Typography variant="h2"
         sx={{p:"50px", pl:"0", mt:"200px"}}>Recent Projects</Typography>
          </Box>
 
-             <Stack sx={{flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+             <Stack sx={{flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "column-reverse", lg: "row", xl: "row"
             }}} mb="140px" mt="10px">
                      <Box
         component="img"
         sx={{
-          height: 400,
-          width: 600,
-          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
+          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
+          mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
+          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          alignSelf: "center",
         }}
         alt="Figma to React project"
         src={GMTA}
@@ -49,15 +54,17 @@ const Projects = () => {
             <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
 
                   <Stack
-                  sx={{flexDirection: {xs: "column", sm: "column", md: "row-reverse", lg: "row-reverse", xl: "row-reverse"
+                  sx={{flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "row-reverse", lg: "row-reverse", xl: "row-reverse"
             }}}
                  mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
-          height: 400,
-          width: 600,
-          ml: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
+          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
+          mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
+          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          alignSelf: "center",
         }}
         alt="The house from the offer."
         src={Cars}
@@ -78,15 +85,17 @@ const Projects = () => {
             <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
 
              <Stack 
-             sx={{flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+             sx={{flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "column-reverse", lg: "row", xl: "row"
             }}}
              mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
-          height: 400,
-          width: 600,
-          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
+          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
+          mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
+          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          alignSelf: "center",
         }}
         alt="The house from the offer."
         src={Chat}
@@ -110,5 +119,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-// bgcolor={"background.default"} color={"text.primary"}
