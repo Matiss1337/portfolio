@@ -14,6 +14,8 @@ import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
+import {Link as ScrollLink} from "react-scroll";
+
 
 
 
@@ -83,9 +85,40 @@ export default function ButtonAppBar({setMode, mode}) {
             MatissTech
           </Typography>
           <Box sx={{display:{xs:"none", sm:"block"}}}>
-          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">About me</Button>
-          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">Projects</Button>
-          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">Contact</Button>
+          <Button
+           sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">
+            <ScrollLink
+          activeClass="active"
+          to="AboutMeTarget"
+          spy={true}
+          smooth={true}
+          offset={-200}
+          duration={500}>
+              About Me
+            </ScrollLink>
+           </Button>
+          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">
+          <ScrollLink
+          activeClass="active"
+          to="ProjectsTarget"
+          spy={true}
+          smooth={true}
+          offset={+110}
+          duration={500}>
+              Projects
+            </ScrollLink>
+          </Button>
+          <Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">
+          <ScrollLink
+          activeClass="active"
+          to="FormTarget"
+          spy={true}
+          smooth={true}
+          offset={+70}
+          duration={500}>
+              Contact Me
+            </ScrollLink>
+          </Button>
           <Link underline="none"  target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vT3pQtRwBbygwJc5NDKfM3WAQmYGbu0rv2dFM7vv4-xYKxKFQ96tinAXw3Gl2Nv0-oeBudxUPnxD2zD/pub"
            color="inherit"><Button sx={{':hover': { bgcolor: '#ff7374',}}} color="inherit">CV</Button></Link>
           
@@ -102,13 +135,43 @@ export default function ButtonAppBar({setMode, mode}) {
           <Drawer open={open} anchor="top" onClose={handleToggle}>
         <List sx={{alignItems:"center"}}>
           <ListItem onClick={handleToggle}>
-            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">About me</Button>} />
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">
+              <ScrollLink
+          activeClass="active"
+          to="AboutMeTarget"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}>
+              About Me
+            </ScrollLink>
+            </Button>} />
           </ListItem>
           <ListItem onClick={handleToggle}>
-            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">Projects</Button>} />
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">
+                        <ScrollLink
+          activeClass="active"
+          to="ProjectsTarget"
+          spy={true}
+          smooth={true}
+          offset={+180}
+          duration={500}>
+              Projects
+            </ScrollLink>
+            </Button>} />
           </ListItem>
           <ListItem onClick={handleToggle} >
-            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">Contact</Button>} />
+            <ListItemText sx={{textAlign:"center"}} primary={<Button color="inherit">
+                        <ScrollLink
+          activeClass="active"
+          to="FormTarget"
+          spy={true}
+          smooth={true}
+          offset={+70}
+          duration={500}>
+              Contact Me
+            </ScrollLink>
+            </Button>} />
           </ListItem>
           <ListItem onClick={handleToggle}>
             <ListItemText  sx={{textAlign:"center"}}

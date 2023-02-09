@@ -4,8 +4,7 @@ import {Box, Stack, Typography} from "@mui/material";
 
 const Hi = () => {
   return (
-    <Stack sx={{ justifyContent:"start", width:"80%"
-    
+    <Stack sx={{ justifyContent:"center", width:"80%"
     }}>
         <Box pt={14} mb={30}>
             <Typography variant="h4">Hi, My name is</Typography>

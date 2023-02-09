@@ -3,12 +3,14 @@ import {Box, Stack, Typography} from "@mui/material";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import {Element } from "react-scroll";
 
 const Form = () => {
 
   return (
+    <Element name="FormTarget">
     <Stack justifyContent="center"  mt="80px" sx={{
-    alignSelf: {xs: "center", sm: "center", md: "center", lg: "center", xl: "center"}
+    alignSelf: "center"
     }}>
         <Stack alignItems="center" width="fit-content"> 
         <Typography variant="h3" textAlign="center" pb="20px" color="#ff5152" fontWeight="bold"> Contact Me </Typography>
@@ -53,6 +55,7 @@ const Form = () => {
         </form>
         </Stack>
     </Stack>
+    </Element>
   )
 }
 

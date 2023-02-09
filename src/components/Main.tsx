@@ -10,7 +10,7 @@ import Form from './Form';
 
 const Main = () => {
   return (
-    <Box flex={11} height="100%" >
+    <Box flex={9} >
       <Stack alignItems="center" bgcolor={"background.default"} color={"text.primary"}>
       <Stack alignItems="center" mt="100px" bgcolor={"background.default"} color={"text.primary"}>
         <Hi/>

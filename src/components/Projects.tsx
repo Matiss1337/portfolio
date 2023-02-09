@@ -6,14 +6,17 @@ import Cars from "../assets/cars.gif"
 import GMTA from "../assets/gmta.gif"
 import Chat from "../assets/chat.gif"
 import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
+import {Element } from "react-scroll";
 
 
 
 
 const Projects = () => {
   return (
-    <Stack flexDirection="column"
+    <Element name="ProjectsTarget">
+    <Stack flexDirection="column" 
     sx={{display: 'flex', width: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "80%"},
+    margin:"auto"
     }}
     >
               <Box>
@@ -123,6 +126,7 @@ const Projects = () => {
 
  
     </Stack>
+    </Element>
   )
 }
 

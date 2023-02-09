@@ -1,15 +1,18 @@
 import React from 'react'
 import {Box, Stack, Typography} from "@mui/material";
 import MyPhoto from "../assets/MyPhoto.png"
+import {Element } from "react-scroll";
 
 
 
 const AboutMe = ({}) => {
   return (
-    <Stack flexDirection="row"
+    <Element name="AboutMeTarget">
+    <Stack 
     sx={{display: 'flex', width: {xs: "80%", sm: "80%", md: "80%", lg: "90%", xl: "80%"},
-    flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "column-reverse", lg: "row", xl: "row"
-            }}}>
+    flexDirection: {xs: "column-reverse", sm: "column-reverse", md: "column-reverse", lg: "row", xl: "row"},
+    margin:"auto"
+    }}>
         <Box>
         <Typography variant="h2" color="#ff5152" fontWeight="bold"
         sx={{p:"45px", pl:"0"}}>About Me</Typography>
@@ -31,6 +34,7 @@ const AboutMe = ({}) => {
         alt="My Photo"
         src={MyPhoto}/>
     </Stack>
+    </Element>
   )
 }
 
