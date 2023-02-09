@@ -7,7 +7,9 @@ import MyPhoto from "../assets/MyPhoto.png"
 const AboutMe = () => {
   return (
     <Stack flexDirection="row" 
-    sx={{display: 'flex', maxWidth: {xs: "300px", sm: "300px", md: "100%", lg: "100%", xl: "100%"}}}>
+    sx={{display: 'flex', maxWidth: {xs: "40%", sm: "50%", md: "70%", lg: "100%", xl: "100%"},
+    flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+            }}}>
         <Box>
         <Typography variant="h2"
         sx={{p:"45px", pl:"0"}}>About Me</Typography>

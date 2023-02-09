@@ -9,19 +9,21 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 const Projects = () => {
   return (
-    <Stack flexDirection="column" sx={{display: 'flex', maxWidth: {xs: "300px", sm: "300px", md: "100%", lg: "100%", xl: "100%"}}}>
+    <Stack flexDirection="column" sx={{ maxWidth: {xs: "40%", sm: "50%", md: "70%", lg: "100%", xl: "100%"}}}>
         <Box>
             
         <Typography variant="h2"
         sx={{p:"50px", pl:"0", mt:"200px"}}>Recent Projects</Typography>
          </Box>
 
-             <Stack flexDirection="row" mb="140px" mt="10px">
+             <Stack sx={{flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+            }}} mb="140px" mt="10px">
                      <Box
         component="img"
         sx={{
           height: 400,
           width: 600,
+          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
         }}
         alt="Figma to React project"
         src={GMTA}
@@ -43,12 +45,16 @@ const Projects = () => {
          </Stack>
             <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
 
-                  <Stack flexDirection="row-reverse" mb="140px" mt="140px">
+                  <Stack
+                  sx={{flexDirection: {xs: "column", sm: "column", md: "row-reverse", lg: "row-reverse", xl: "row-reverse"
+            }}}
+                 mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
           height: 400,
           width: 600,
+          ml: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
         }}
         alt="The house from the offer."
         src={Cars}
@@ -68,12 +74,16 @@ const Projects = () => {
          </Stack>
             <Divider style={{ backgroundColor: '#ff5152', width: '100%', height: '80px'}} />
 
-             <Stack flexDirection="row" mb="140px" mt="140px">
+             <Stack 
+             sx={{flexDirection: {xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+            }}}
+             mb="140px" mt="140px">
                      <Box
         component="img"
         sx={{
           height: 400,
           width: 600,
+          mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"}
         }}
         alt="The house from the offer."
         src={Chat}

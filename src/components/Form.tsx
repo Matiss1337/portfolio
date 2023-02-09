@@ -7,19 +7,23 @@ import SendIcon from '@mui/icons-material/Send';
 const Form = () => {
 
   return (
-    <Stack alignItems="center" mt="80px" sx={{maxWidth: {xs: "300px", sm: "300px", md: "100%", lg: "100%", xl: "100%"}}}>
-        <Box>
+    <Stack justifyContent="center"  mt="80px" sx={{
+    alignSelf: {xs: "flex-start", sm: "center", md: "center", lg: "center", xl: "center"}
+    }}>
+        <Stack alignItems="center" width="fit-content">
         <Typography variant="h3" textAlign="center" pb="20px"> Contact Me </Typography>
         <form action="https://formsubmit.co/matissj1337@gmail.com" method="POST">
-        <Box flexDirection="column" display="flex" width="600px" >
-            <Stack flexDirection="row" pb="20px">
-              <TextField sx={{width: "50%"}}
+        <Box flexDirection="column" display="flex" width="100%" >
+            <Stack sx={{flexDirection: {
+              xs: "column", sm: "column", md: "row", lg: "row", xl: "row"
+            }}} pb="20px">
+              <TextField sx={{width: {xs: "100%", sm: "100%", md: "50%", lg: "50%", xl: "50%"}}}
               required
               id="name"
               label="Your Name"
               name="name"
             /> 
-            <TextField sx={{width: "50%"}}
+              <TextField sx={{width: {xs: "100%", sm: "100%", md: "50%", lg: "50%", xl: "50%"}}}
               required
               id="phone"
               label="Your Phone number"
@@ -45,7 +49,7 @@ const Form = () => {
           </Button>
         </Box>
         </form>
-        </Box>
+        </Stack>
     </Stack>
   )
 }
