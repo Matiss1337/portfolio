@@ -16,7 +16,7 @@ console.log("Hello, My Name is Matiis, but you can call me Matt, this site was b
 
   const darkTheme = createTheme({
     palette: {
-      mode: mode
+      mode: mode === 'light' ? 'light' : 'dark',
     }
   })
 
