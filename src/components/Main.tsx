@@ -10,7 +10,7 @@ import Form from './Form';
 
 const Main = () => {
   return (
-    <Box flex={9} >
+    <Box flex={9} sx={{overflowX: "hidden"}}>
       <Stack alignItems="center" bgcolor={"background.default"} color={"text.primary"}>
       <Stack alignItems="center" mt="100px" bgcolor={"background.default"} color={"text.primary"}>
         <Hi/>
