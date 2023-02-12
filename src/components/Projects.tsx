@@ -34,8 +34,8 @@ const Projects = () => {
         borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
-          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
-          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          height: {xs: "150px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "300px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
           alignSelf: "center",
         }}
         alt="Figma to React project"
@@ -70,8 +70,8 @@ const Projects = () => {
         borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
-          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
-          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          height: {xs: "150px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "300px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
           alignSelf: "center",
         }}
         alt="The house from the offer."
@@ -104,8 +104,8 @@ const Projects = () => {
         borderRadius:"10px",
           mr: {xs: "0", sm: "0", md: "0", lg: "80px", xl: "80px"},
           mt: {xs: "80px", sm: "80px", md: "80px", lg: "0px", xl: "0px"},
-          height: {xs: "200px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
-          width: {xs: "400px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
+          height: {xs: "150px", sm: "200px", md: "400px", lg: "400px", xl: "400px"},
+          width: {xs: "300px", sm: "400px", md: "600px", lg: "600px", xl: "600px"},
           alignSelf: "center",
         }}
         alt="The house from the offer."
