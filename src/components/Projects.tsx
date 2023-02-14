@@ -117,8 +117,8 @@ const Projects = () => {
             <Typography variant="h4">Tehnologies Used:</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>React</Typography>
             <Typography variant="h5"><CheckOutlinedIcon/>Typescript</Typography>
-            <Typography variant="h5"><CheckOutlinedIcon/>Material-ui</Typography>
-            <Typography variant="h5"><CheckOutlinedIcon/>Responsive design</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>Websockets</Typography>
+            <Typography variant="h5"><CheckOutlinedIcon/>Node.js</Typography>
             <Button sx={{p:"10px 25px 10px 25px", mt:"20px", bgcolor:"#ff5152", color:"White",':hover': { bgcolor: '#ff7374',}}} variant="contained" href="https://github.com/Matiss1337/Chat-App" 
              color="inherit" target="_blank">Github Link</Button>
             </Box>
