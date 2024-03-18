@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 function App() {
 console.log("Hello, My Name is Matiis, but you can call me Matt, this site was built with React, TS and Materia-ui on VITE base.")
 
+console.log("I will use this protfolio as base, but rebuild it with alpine.js and tailwind.")
+
   const [mode, setMode] = useState('light')
 
   const darkTheme = createTheme({
